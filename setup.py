@@ -6,9 +6,9 @@ from os import path
 p = path.abspath(path.dirname(__file__))
 readme_filepath = path.join(p, 'README.md')
 README = "See https://github.com/bc/ftpsconnector for full documentation."
-if os.path.isfile(readme_filepath):
+if path.isfile(readme_filepath):
       with open(readme_filepath) as f:
-          README = f.read()
+            README = f.read()
 
 setup(name='ftpsconnector',
       version='0.2.2',
