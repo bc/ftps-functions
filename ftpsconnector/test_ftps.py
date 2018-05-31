@@ -3,6 +3,7 @@ from .helper_functions import *
 
 def use_brian_login():
     user = 'brian'
+    # Alternative approach:
     # password = open("/Users/briancohn/Desktop/password.txt").read()
     try:
         os.environ["MY_PASSWORD"]

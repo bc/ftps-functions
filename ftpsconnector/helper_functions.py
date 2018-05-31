@@ -1,4 +1,3 @@
-import pdb
 from ftplib import FTP_TLS
 import ssl
 import os
