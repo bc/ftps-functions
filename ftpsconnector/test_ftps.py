@@ -7,7 +7,7 @@ def use_brian_login():
     try:  
         os.environ["MY_PASSWORD"]
     except KeyError: 
-        print "Please set the environment variable MY_PASSWORD"
+        print("Please set the environment variable MY_PASSWORD")
         sys.exit(1)
     password = os.environ["MY_PASSWORD"]
     print("MARK")
