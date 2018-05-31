@@ -7,4 +7,5 @@ ftpsconnector.egg-info/PKG-INFO
 ftpsconnector.egg-info/SOURCES.txt
 ftpsconnector.egg-info/dependency_links.txt
 ftpsconnector.egg-info/not-zip-safe
+ftpsconnector.egg-info/requires.txt
 ftpsconnector.egg-info/top_level.txt
