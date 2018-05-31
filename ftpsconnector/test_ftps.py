@@ -5,6 +5,7 @@ def use_brian_login():
     user = 'brian'
     # password = open("/Users/briancohn/Desktop/password.txt").read()
     password = os.environ["MY_PASSWORD"]
+    print("MARK")
     print(password)
     ftp = connect(user, password)
     return(ftp)
