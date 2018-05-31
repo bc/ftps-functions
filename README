@@ -41,3 +41,11 @@ receive(ftp, filepath_pensieve, filepath_local,
 ftp.quit()
 ftp = None
 ```
+
+# Devnotes
+```
+python setup.py sdist upload -r pypitest
+python setup.py sdist upload -r pypi
+```
+
+Make sure the `~/.pypirc` file has the correct info. See [Link](https://peterdowns.com/posts/first-time-with-pypi.html)
