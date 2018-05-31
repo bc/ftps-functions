@@ -4,14 +4,14 @@ from .helper_functions import *
 def use_brian_login():
     user = 'brian'
     # password = open("/Users/briancohn/Desktop/password.txt").read()
-    try:  
+    try:
         os.environ["MY_PASSWORD"]
-    except KeyError: 
+    except KeyError:
         print("Please set the environment variable MY_PASSWORD")
         sys.exit(1)
     password = os.environ["MY_PASSWORD"]
     print("MARK")
-    print(password)
+    # print(password)
     ftp = connect(user, password)
     return(ftp)
 
@@ -53,5 +53,3 @@ class TestClass(object):
         assert os.path.isfile(filepath_local)
         os.remove(filepath_local)
         assert os.path.isfile(filepath_local) is False
-
-
