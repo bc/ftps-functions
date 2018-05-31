@@ -7,7 +7,7 @@ p = path.abspath(path.dirname(__file__))
 with open(path.join(p, 'README.md')) as f:
     README = f.read()
 setup(name='ftpsconnector',
-      version='0.1.6',
+      version='0.1.7',
       description='Initial connector code for pensieve',
       long_description=README,
       long_description_content_type="text/markdown",
