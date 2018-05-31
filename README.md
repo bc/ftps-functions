@@ -18,10 +18,7 @@ pytest #only for brian's test case
 
 ### Bring in dependencies and set up user/pass
 ```py
-import ftplib
-from helper_functions import *
-
-
+from ftpsconnector.helper_functions import connect, tx_with_progress, receive
 ftp = connect(user='brian', password='your_password_here')
 ```
 You need to define a file called `password.txt` and include only one line with your password in plaintext. Do not commit this file, use a .gitignore.
