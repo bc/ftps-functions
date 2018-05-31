@@ -16,4 +16,5 @@ setup(name='ftpsconnector',
       author_email='brian.cohn@usc.edu',
       license='MIT',
       packages=['ftpsconnector'],
+      install_requires=['tqdm'],
       zip_safe=False)
