@@ -11,7 +11,7 @@ if os.path.isfile(readme_filepath):
           README = f.read()
 
 setup(name='ftpsconnector',
-      version='0.2.1',
+      version='0.2.2',
       description='Initial FTPS Binary File Upload/Dowload connector code for Pensieve',
       long_description=README,
       long_description_content_type="text/markdown",
