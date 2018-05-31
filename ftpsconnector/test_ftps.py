@@ -4,6 +4,11 @@ from .helper_functions import *
 def use_brian_login():
     user = 'brian'
     # password = open("/Users/briancohn/Desktop/password.txt").read()
+    try:  
+        os.environ["MY_PASSWORD"]
+    except KeyError: 
+        print "Please set the environment variable FOO"
+        sys.exit(1)
     password = os.environ["MY_PASSWORD"]
     print("MARK")
     print(password)
