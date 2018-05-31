@@ -1,6 +1,11 @@
 # FTPS Upload
 Prepared by: Brian Cohn
 
+# Installation
+```py
+pip install -r /path/to/requirements.txt
+```
+
 # Example usage:
 
 ### Bring in dependencies and set up user/pass
@@ -27,7 +32,7 @@ tx_with_progress(ftp, input_filepath, destination_filepath,
 ### Download that file back to local
 ```py
 filepath_pensieve = "home/brian_scratch/0ad.zip"
-filepath_local = "~/Downloads/0ad_from_pe.zip"
+filepath_local = "~/Downloads/0ad.zip"
 receive(ftp, filepath_pensieve, filepath_local, 
         block_size_bytes=12500000)
 ```

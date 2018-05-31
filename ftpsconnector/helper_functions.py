@@ -1,3 +1,4 @@
+import pdb
 from ftplib import FTP_TLS
 import ssl
 import os
@@ -10,12 +11,11 @@ Prints all files in the home directory
 """
 
 
-def connect():
-    global user, password
+def connect(user, password, ip_address='pensieve.usc.edu', port=41590):
     ftp = FTP_TLS()
     ftp.ssl_version = ssl.PROTOCOL_SSLv23
     ftp.debugging = 2
-    ftp.connect('pensieve.usc.edu', 41590)
+    ftp.connect(ip_address, port)
     ftp.login(user, password)
     ftp.prot_p()
     ftp.retrlines('LIST home')
@@ -60,6 +60,11 @@ def receive(ftp, input_filepath, dest_filepath, block_size_bytes):
     size_set_str = "SIZE %s" % input_filepath
     filesize = int(ftp.sendcmd(size_set_str).split(" ")[1])
     print("Downloading %s MB" % str(filesize / 1e6))
+    # pdb.set_trace()
     lf = open(dest_filepath, "wb")
-    ftp.retrbinary('RETR ' + input_filepath, callback=lf.write)
+
+    def callback_fn(send):
+        lf.write(send)
+
+    ftp.retrbinary('RETR ' + input_filepath, callback=callback_fn)
     lf.close()
