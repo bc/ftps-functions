@@ -1,9 +1,8 @@
-README
 setup.cfg
 setup.py
 ftpsconnector/__init__.py
-ftpsconnector/ftp_upload.py
 ftpsconnector/helper_functions.py
+ftpsconnector/test_ftps.py
 ftpsconnector.egg-info/PKG-INFO
 ftpsconnector.egg-info/SOURCES.txt
 ftpsconnector.egg-info/dependency_links.txt
