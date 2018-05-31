@@ -1,6 +1,6 @@
 # FTPS Upload
 Prepared by: Brian Cohn
-
+[![Build Status](https://travis-ci.org/bc/ftpsconnector.svg?branch=master)](https://travis-ci.org/bc/ftpsconnector)
 # Installation
 ```py
 pip install -r /path/to/requirements.txt
