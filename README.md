@@ -3,7 +3,15 @@ Prepared by: Brian Cohn
 [![Build Status](https://travis-ci.org/bc/ftpsconnector.svg?branch=master)](https://travis-ci.org/bc/ftpsconnector)
 # Installation
 ```py
-pip install -r /path/to/requirements.txt
+pip install ftpsconnector
+```
+
+# Installation from GitHub
+```bash
+git clone git@github.com:bc/ftpsconnector.git && cd ftpsconnector
+pip install -r requirements.txt
+pip install .
+pytest #only for brian's test case
 ```
 
 # Example usage:
